@@ -9091,6 +9091,7 @@
         updateNavbar(result.user);
         
       } catch(err) {
+        openLoginModal();
         if (auth.currentUser) {
           console.warn('Google sign-in error ignored because user is already logged in:', err);
           return;
